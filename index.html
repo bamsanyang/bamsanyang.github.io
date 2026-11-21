@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FCO구단비서</title>
+<meta name="description" content="FC온라인 내 전적, 상대 스쿼드, 거래 손익을 폰에서 보는 비공식 도구">
+<meta name="theme-color" content="#0F1013">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="FCO구단비서">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&amp;family=IBM+Plex+Sans+KR:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<script>try{var t=JSON.parse(localStorage.getItem('gb:theme')||'""');if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+<a class="mark" href="https://www.youtube.com/@bamsanyang" target="_blank" rel="noopener" aria-label="밤사냥 유튜브 채널 열기"><img src="bs-mark.webp" alt="" width="216" height="220"></a>
+<div class="mid"><a class="brand" href="#home">FCO구단비서</a><span class="tag" id="mode"></span></div>
+<a class="wolf" href="https://www.youtube.com/@bamsanyang" target="_blank" rel="noopener" aria-label="밤사냥 유튜브 채널 열기"><img src="bs-wolf.webp" alt="" width="356" height="360"></a>
+</header>
+<main id="view" tabindex="-1"></main>
+<nav aria-label="주 메뉴"><a href="#home">홈</a><div class="nmid"><a href="#matches">전적</a><a href="#scout">공략</a><a href="#squad">스쿼드</a><a href="#ledger">가계부</a><a href="#videos">영상</a></div><a href="#setup">설정</a></nav>
+<div id="sheet" hidden role="dialog" aria-modal="true" aria-label="경기 상세"><div class="sheetin"><button type="button" id="sheetClose" class="btn ghost" data-act="close">닫기</button><div id="sheetBody"></div></div></div>
+<div id="pcard" hidden role="dialog" aria-modal="true" aria-label="선수 정보"><div id="pcIn"><button type="button" class="btn ghost" data-act="pclose">닫기</button><div id="pcBody"></div></div></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
