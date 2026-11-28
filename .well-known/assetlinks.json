@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.bamsanyang.fcogudan",
+      "sha256_cert_fingerprints": [
+        "A8:1B:B4:F3:5F:F3:00:98:AB:B9:20:AC:F4:93:04:05:67:52:FC:2B:4C:97:CA:CA:35:D3:AD:3D:FB:95:D1:BA",
+        "15:78:3E:6F:F6:17:F4:51:5A:0F:6F:81:7C:E4:A2:AE:52:F3:B4:51:C9:C5:0A:55:71:EF:55:31:A4:7C:33:C6"
+      ]
+    }
+  }
+]
